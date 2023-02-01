@@ -26,6 +26,9 @@ a {
 a:visited {
   color: unset;
 }
+body {
+  overflow-x: hidden;
+}
 
 /*#region       Navbar          */
 header {
@@ -628,6 +631,7 @@ section.loading div:before {
   }
   section#home {
     background-attachment: scroll;
+    background-position: center;
   }
 }
 @media screen and (max-width: 400px) {

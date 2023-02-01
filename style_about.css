@@ -13,6 +13,7 @@
   font-weight: 700;
   font-size: calc(3rem + 3vw);
   color: white;
+  text-align: center;
 }
 section#about__home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -90,7 +91,7 @@ section#about__equipe .about__equipe__content h2 {
 .about__equipe__content .teamContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 100%;
 }
 .teamContainer .teams {
   margin: 1rem auto;
@@ -101,8 +102,8 @@ section#about__equipe .about__equipe__content h2 {
   position: relative;
 }
 .teamContainer .teams img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   position: relative;
   filter: sepia(0);
   transition: all 0.5s ease-in-out;
@@ -153,6 +154,7 @@ section#about__dentiste {
 section#about__dentiste .about__dentiste__content {
   padding: 0 15%;
   display: flex;
+  justify-content: center;
 }
 .about__dentiste__content .dentisteDesc {
   width: 33%;
@@ -255,10 +257,52 @@ section#about__dentiste .about__dentiste__content {
     margin: 0 3% 0 0;
   }
 }
+@media screen and (max-width: 1000px) {
+  section#about__clinique {
+    padding: 4rem;
+  }
+  section#about__equipe {
+    padding: 1.5rem;
+  }
+  section#about__dentiste .about__dentiste__content {
+    padding: 0 5%;
+  }
+  section#about__dentiste {
+    padding: 5rem 2rem;
+  }
+  .about__equipe__content .teamContainer {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 700px) {
   #soins p {
     padding: 3rem;
     font-size: calc(1rem + 1.5vw);
+  }
+  section#about__dentiste .about__dentiste__content {
+    padding: 0 0;
+  }
+  section#about__dentiste .about__dentiste__content {
+    flex-direction: column;
+  }
+  .about__dentiste__content .dentisteDesc {
+    width: 100%;
+  }
+  .about__dentiste__content .dentisteDesc {
+    margin: 0 0;
+  }
+  .teamContainer .teams {
+    width: 150px;
+    height: 150px;
+  }
+  .about__equipe__content .teamContainer {
+    width: 100%;
+  }
+  section#about__clinique {
+    padding: 40px calc(2rem + 2vw);
+  }
+  .about__clinique--content {
+    padding: 0 0;
   }
 }
 @media screen and (max-width: 550px) {
@@ -278,5 +322,8 @@ section#about__dentiste .about__dentiste__content {
   section#about__home,
   section#soin__home {
     background-attachment: scroll;
+  }
+  section#about__clinique {
+    padding: 3rem;
   }
 }
