@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+/*#region       Home */
+.secondary-home {
+  margin-top: 8.4rem;
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondary-home h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: calc(3rem + 3vw);
+  color: white;
+}
+section#about__home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://lirp.cdn-website.com/5223305b/dms3rep/multi/opt/IMG_1564-70cba711-2880w.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+}
+section#soin__home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://lirp.cdn-website.com/5223305b/dms3rep/multi/opt/IMG_1560-2880w.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* #endregion */
+/*#region       About Clinique  */
+section#about__clinique {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+}
+.about__clinique--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 15%;
+}
+.about__clinique--content .imgBox {
+  width: 47%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__clinique--content .imgBox img {
+  width: calc(50% + 50rem);
+}
+.about__clinique--content .textBox {
+  width: 47%;
+  margin: 0 3% 0 0;
+}
+.about__clinique--content .textBox h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-size: 3.6rem;
+  margin: 2rem 0;
+}
+.about__clinique--content .textBox p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+/* #endregion */
+/*#region       About Equipe    */
+section#about__equipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+}
+section#about__equipe .about__equipe__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section#about__equipe .about__equipe__content h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+}
+.about__equipe__content .teamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.teamContainer .teams {
+  margin: 1rem auto;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  position: relative;
+}
+.teamContainer .teams img {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  filter: sepia(0);
+  transition: all 0.5s ease-in-out;
+}
+.teamContainer .teams:hover img {
+  transform: scale(1.2);
+  filter: sepia(0.4);
+  /*   opacity: 0.75; */
+  cursor: pointer;
+}
+.teamContainer .teams .textBox {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 0.5s ease-in-out;
+  transform: translateY(100%);
+}
+.teamContainer .teams:hover .textBox {
+  opacity: 1;
+  cursor: pointer;
+  transform: translateY(0);
+}
+.teamContainer .teams .textBox h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-size: 1.8rem;
+}
+.teamContainer .teams .textBox p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+/* #endregion */
+/*#region       About Dentiste  */
+section#about__dentiste {
+  padding: 5rem 10rem;
+}
+section#about__dentiste .about__dentiste__content {
+  padding: 0 15%;
+  display: flex;
+}
+.about__dentiste__content .dentisteDesc {
+  width: 33%;
+  margin: 0 2rem;
+}
+.about__dentiste__content .dentisteDesc h3 {
+  margin-bottom: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+.about__dentiste__content .dentisteDesc p {
+  margin-bottom: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+/* #endregion */
+/*#region       Service         */
+
+#soins p {
+  text-align: center;
+  padding: 10rem;
+  color: rgb(0, 0, 0);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  font-size: calc(2rem + 0.5vw);
+}
+.servicesContainer {
+  color: rgb(0, 0, 0);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: calc(0.2rem + 0.6777vw);
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services {
+  padding: 1rem;
+  display: flex;
+  background-color: var(--main-color-shade-);
+  flex-basis: 500px;
+  margin: 2rem 2rem;
+}
+.services svg {
+  max-width: 20%;
+}
+.services ul {
+  list-style: none;
+  width: 80%;
+}
+.services ul li {
+  margin: 1rem 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+.services ul li:first-child {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* #endregion */
+/*#region       Sondage */
+#sondage__home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://lirp.cdn-website.com/md/unsplash/dms3rep/multi/opt/photo-1520013573795-38516d2661e4-2880w.jpg);
+  background-position: 0% 30%;
+  background-attachment: fixed;
+}
+.ButtonBase__Overlay-sc-p43e7i-4 {
+  background-color: var(--secondary-color-) !important;
+}
+.hxNPOl {
+  border-width: 0px;
+}
+.elfsight-app-833edc4b-92f1-4fbb-8e75-e187ea1b3892 {
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-weight: 300 !important;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.Content__Font-sc-3sh3bs-0 a {
+  display: none !important;
+  opacity: 0 !important;
+}
+/* #endregion */
+
+@media screen and (max-width: 1330px) {
+  .about__clinique--content .imgBox {
+    width: 100%;
+    order: -1;
+  }
+  .about__clinique--content .imgBox img {
+    width: calc(50% + 50rem);
+  }
+  .about__clinique--content .textBox {
+    width: 100%;
+    margin: 0 3% 0 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  #soins p {
+    padding: 3rem;
+    font-size: calc(1rem + 1.5vw);
+  }
+}
+@media screen and (max-width: 550px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .services svg {
+    margin-left: 10px;
+  }
+}
