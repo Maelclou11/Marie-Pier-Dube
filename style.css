@@ -276,7 +276,7 @@ section#visite3d {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 15%;
+  width: 20%;
 }
 .visite__content .textBox h5 {
   font-size: calc(1.5rem + 1vh);
@@ -289,11 +289,10 @@ section#visite3d {
   font-size: calc(2rem + 2vh);
   font-weight: bold;
   color: var(--secondary-color-);
+  pointer-events: none;
 }
 .visite__content .visite--virtualTour {
-  width: 45%;
-  height: 50rem;
-  border: 0.2rem solid #444;
+  width: 60%;
 }
 /* #endregion */
 /*#region       Plus d'info     */
@@ -438,13 +437,15 @@ section.loading div {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  -webkit-overflow: hidden;
   width: 200px;
 }
 section.loading div img {
-  object-fit: cover;
+  /* object-fit: cover; */
   position: relative;
   z-index: 110;
   overflow: hidden;
+  -webkit-overflow: hidden;
 }
 section.loading div:before {
   content: "";
@@ -614,6 +615,9 @@ section.loading div:before {
   }
   .about .about__textBox h2 {
     font-size: calc(2rem + 2vw);
+  }
+  section.loading div {
+    width: 150px;
   }
 }
 @media screen and (max-width: 400px) {
