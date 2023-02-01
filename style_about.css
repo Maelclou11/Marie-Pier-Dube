@@ -275,4 +275,8 @@ section#about__dentiste .about__dentiste__content {
   .services svg {
     margin-left: 10px;
   }
+  section#about__home,
+  section#soin__home {
+    background-attachment: scroll;
+  }
 }
