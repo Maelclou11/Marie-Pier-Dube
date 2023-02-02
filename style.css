@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* outline: 2px red solid; */
 }
 
 :root {
@@ -27,7 +28,8 @@ a:visited {
   color: unset;
 }
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  max-width: 100vw;
 }
 
 /*#region       Navbar          */
@@ -310,6 +312,7 @@ section#plusinfo .plusinfo__content {
   justify-content: center;
   align-items: center;
   width: fit-content;
+  max-width: 100vw;
   flex-wrap: wrap;
   height: fit-content;
 }
@@ -348,7 +351,7 @@ section#plusinfo .plusinfo__content {
   max-width: 20rem;
   margin-bottom: 2rem;
 }
-.plusinfo__content .textBox p span {
+.plusinfo__content .textBox p .spantoutcourt {
   font-weight: 700;
   color: rgb(41, 41, 41);
   text-decoration: none;
@@ -574,7 +577,6 @@ section.loading div:before {
     width: 100%;
   }
   section#aboutClinique .about {
-    padding: 0 10rem;
     justify-content: center;
     height: fit-content;
   }

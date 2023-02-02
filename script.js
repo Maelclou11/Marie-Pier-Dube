@@ -142,6 +142,7 @@ ScrollReveal().reveal('.about__textBox', { delay: 500, origin: 'right', interval
 // Reveal Visite
 ScrollReveal().reveal('.visite__content .textBox', { delay: 500, origin: 'left', interval: 200});
 ScrollReveal().reveal('.visite__content .textBox a', { delay: 1000, distance: 0, opacity: 1, scale: 0.7});
+ScrollReveal().reveal('.visite--matterport3d', { delay: 1000, origin: 'right', distance: '60px'});
 
 // Reveal Info
 ScrollReveal().reveal('.plusinfo__content .imgBox', { delay: 800, origin: 'left'});
